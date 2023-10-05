@@ -1,0 +1,4 @@
+backend/.env
+backend/src/config/config.json
+backend/src/config/emailConfig.js
+backend/src/node_modules/

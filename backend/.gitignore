@@ -1,0 +1,4 @@
+.env
+config/config.json
+config/emailConfig.js
+node_modules/
