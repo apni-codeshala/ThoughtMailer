@@ -7,9 +7,9 @@ const { validateUserAuth } = require('../../middlewares/auth-request-validator')
 const router = express.Router();
 
 // SignUp routes
-router.post('/users', validateUserAuth, signup);
-router.get('/users', validateUserAuth, signin);
-router.get('/users/isAuthenticated', validateUserAuth, isAuthenticated);
+router.post('/signup', validateUserAuth, signup);
+router.post('/login', validateUserAuth, signin);
+router.get('/isAuthenticated', isAuthenticated);
 
 // Login routes
 router.get('/thought', getRandomThought);
