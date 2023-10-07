@@ -4,11 +4,11 @@ const bodyParser = require('body-parser');
 const { PORT } = require('./config/serverConfig');
 const ApiRoutes = require('./routes/index.js');
 
-const { setUpJob } = require('./services/scheduleService')
+const { setUpJob } = require('./services/scheduleService');
 
 const app = express();
 
-function setUpAndStartServer(){
+async function setUpAndStartServer(){
 
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({extended: true}));

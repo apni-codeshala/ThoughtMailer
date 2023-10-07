@@ -8,5 +8,5 @@ module.exports = {
     SALT: bcrypt.genSaltSync(10),
     EMAIL_ID: process.env.EMAIL_ID,
     EMAIL_PASS: process.env.EMAIL_PASS,
-    JWT_KEY:  process.env.JWT_KEY
+    JWT_KEY:  process.env.JWT_KEY,
 }
