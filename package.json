@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "start": "npx nodemon src/index.js -e js,hbs"
+    "dev": "npx nodemon src/index.js",
+    "start": "node src/index.js"
   },
   "author": "Abhishek Patel",
   "license": "ISC",
