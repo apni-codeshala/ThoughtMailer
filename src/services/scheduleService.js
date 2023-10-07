@@ -8,7 +8,7 @@ const userService = new UserService();
 const thoughtService = new ThoughtService();
 
 const setUpJob = () => {
-    cron.schedule('*/1 * * * *', async () => {
+    cron.schedule('0 10 * * *', async () => {
         const users = await userService.getAll();
         users.forEach(async (user) => {
             const thought = await thoughtService.getRandomThought();
@@ -17,7 +17,7 @@ const setUpJob = () => {
             console.log(user.email);
             sendThoughtMail(user.name, user.email, thoughtData);
         });
-    })
+    });
 }
 
 module.exports = {
