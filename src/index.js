@@ -15,6 +15,10 @@ async function setUpAndStartServer(){
 
     app.use('/api', ApiRoutes);
 
+    app.get('/', (req, res) => {
+        return res.status(200).send("Service Working");
+    });
+
     app.listen(PORT, async () => {
         console.log(`Server started on port ${PORT}`);
 
